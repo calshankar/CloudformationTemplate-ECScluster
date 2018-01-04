@@ -1,0 +1,11 @@
+# Stack Description for Dev environment
+Stack.Name: microtrader-dev
+Stack.Description: Dev stack for local env
+
+# RDS Deletion Overrides goes here
+AWS::RDS::DBInstance:
+  DeletionPolicy: Delete
+
+# Log Group Deletion policy
+AWS::Logs::LogGroup:
+  DeletionPolicy: Delete
